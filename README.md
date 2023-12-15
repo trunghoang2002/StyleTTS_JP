@@ -34,10 +34,4 @@ python train_second.py --config_path ./Configs/config.yml
 
 
 ## Inference
-詳細は[inference.ipynb](https://github.com/yl4579/StyleTTS/blob/main/Demo/Inference_LJSpeech.ipynb)を参照されたい。
-
-24kHzのLJSpeechコーパスに対するStyleTTSとHifi-GANの事前学習は、[StyleTTS Link](https://drive.google.com/file/d/1aqOExU7NroGHdIVjgkzqRYrK5q_694cj/view?usp=sharing)と[Hifi-GAN Link](https://drive.google.com/file/d/1h_h0GFdC6VOiZ-oFDClqy2bVonA1xDiw/view?usp=sharing)からダウンロードできます。
-
-LibriTTSコーパスに事前学習されたStyleTTSとHifi-GANは、[StyleTTS Link](https://drive.google.com/file/d/1nm0yB6Y5QWF3FYGfJCwQ6zYNlOAYVSet/view?usp=sharing)と[Hifi-GAN Link](https://drive.google.com/file/d/1RDxYknrzncGzusYeVeDo38ErNdczzbik/view?usp=sharing)からダウンロードできます。また、ゼロショットデモを実行したい場合は、LibriTTSからtest-cleanをダウンロードする必要があります。
-
-HiFi-GANの事前学習モデルを`Vocoder`に解凍し、ノートブックの各セルを実行してください。
+こちら[Hifi-GAN Link](https://drive.google.com/file/d/1h_h0GFdC6VOiZ-oFDClqy2bVonA1xDiw/view?usp=sharing)をダウンロードして`Vocoder`に解凍し、`Demo/inference_JSUT.ipynb`の各セルを実行してください。zero-shotの部分は対応していません。[元のリポジトリ](https://github.com/yl4579/StyleTTS)を参考に各自で動かしてみてください
