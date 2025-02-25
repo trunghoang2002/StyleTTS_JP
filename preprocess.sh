@@ -1,4 +1,9 @@
-[ ! -e "jsut_ver1.1" ] && unzip jsut_ver1.1.zip || wget http://ss-takashi.sakura.ne.jp/corpus/jsut_ver1.1.zip && unzip jsut_ver1.1.zip 
+if [ ! -e "jsut_ver1.1" ]; then
+    if [ ! -f "jsut_ver1.1.zip" ]; then
+        wget http://ss-takashi.sakura.ne.jp/corpus/jsut_ver1.1.zip
+    fi
+    unzip jsut_ver1.1.zip
+fi
 
 # JSUT
 source_dir="jsut_ver1.1"
@@ -36,8 +41,5 @@ tail -n 100 train_list.txt > val_list.txt
 # perl -pi -e 'chomp if eof' train_list.txt
 # perl -pi -e 'chomp if eof' val_list.txt
 
-cp train_list.txt Data/train_list.txt
-cp val_list.txt Data/val_list.txt
-
-rm train_list.txt
-rm val_list.txt
+mv train_list.txt Data/train_list.txt
+mv val_list.txt Data/val_list.txt
