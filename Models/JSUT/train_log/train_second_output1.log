@@ -1,0 +1,247 @@
+{'max_lr': 0.0001, 'pct_start': 0.0, 'epochs': 101, 'steps_per_epoch': 641}
+{'max_lr': 0.0001, 'pct_start': 0.0, 'epochs': 101, 'steps_per_epoch': 641}
+{'max_lr': 0.0001, 'pct_start': 0.0, 'epochs': 101, 'steps_per_epoch': 641}
+{'max_lr': 0.0001, 'pct_start': 0.0, 'epochs': 101, 'steps_per_epoch': 641}
+{'max_lr': 0.0001, 'pct_start': 0.0, 'epochs': 101, 'steps_per_epoch': 641}
+{'max_lr': 0.0001, 'pct_start': 0.0, 'epochs': 101, 'steps_per_epoch': 641}
+{'max_lr': 0.0001, 'pct_start': 0.0, 'epochs': 101, 'steps_per_epoch': 641}
+Loading the second stage model at Models/JSUT/epoch_2nd_00016.pth ...
+predictor loaded
+decoder loaded
+pitch_extractor loaded
+text_encoder loaded
+style_encoder loaded
+text_aligner loaded
+discriminator loaded
+Epoch [17/101], Step [20/641], Loss: 0.31484, Avd Loss: 0.68515,  Disc Loss: 1.36693, Dur Loss: 0.68001, Norm Loss: 0.47998, F0 Loss: 2.33180
+Epoch [17/101], Step [40/641], Loss: 0.31554, Avd Loss: 0.74734,  Disc Loss: 1.32548, Dur Loss: 0.47738, Norm Loss: 0.41585, F0 Loss: 2.09300
+Epoch [17/101], Step [60/641], Loss: 0.31633, Avd Loss: 0.64087,  Disc Loss: 1.36555, Dur Loss: 0.46239, Norm Loss: 0.40398, F0 Loss: 2.21549
+Epoch [17/101], Step [80/641], Loss: 0.31735, Avd Loss: 0.68513,  Disc Loss: 1.30087, Dur Loss: 0.52585, Norm Loss: 0.40432, F0 Loss: 2.18713
+Epoch [17/101], Step [100/641], Loss: 0.31444, Avd Loss: 0.70148,  Disc Loss: 1.36460, Dur Loss: 0.45592, Norm Loss: 0.41928, F0 Loss: 2.46309
+Epoch [17/101], Step [120/641], Loss: 0.31362, Avd Loss: 0.68879,  Disc Loss: 1.35737, Dur Loss: 0.46155, Norm Loss: 0.42571, F0 Loss: 2.22728
+Epoch [17/101], Step [140/641], Loss: 0.31989, Avd Loss: 0.71777,  Disc Loss: 1.36383, Dur Loss: 0.44166, Norm Loss: 0.48100, F0 Loss: 2.32131
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [17/101], Step [160/641], Loss: 0.31297, Avd Loss: 0.82676,  Disc Loss: 1.32454, Dur Loss: 0.45618, Norm Loss: 0.41200, F0 Loss: 2.00542
+Epoch [17/101], Step [180/641], Loss: 0.31223, Avd Loss: 0.73470,  Disc Loss: 1.35442, Dur Loss: 0.45871, Norm Loss: 0.37790, F0 Loss: 2.33731
+Epoch [17/101], Step [200/641], Loss: 0.31178, Avd Loss: 0.72281,  Disc Loss: 1.35451, Dur Loss: 0.48156, Norm Loss: 0.39052, F0 Loss: 2.07241
+Epoch [17/101], Step [220/641], Loss: 0.32020, Avd Loss: 0.78699,  Disc Loss: 1.36835, Dur Loss: 0.46949, Norm Loss: 0.41389, F0 Loss: 2.22122
+Epoch [17/101], Step [240/641], Loss: 0.31104, Avd Loss: 0.80440,  Disc Loss: 1.37784, Dur Loss: 0.44268, Norm Loss: 0.36326, F0 Loss: 2.18091
+Epoch [17/101], Step [260/641], Loss: 0.30871, Avd Loss: 0.78389,  Disc Loss: 1.36440, Dur Loss: 0.48206, Norm Loss: 0.40317, F0 Loss: 2.30176
+Epoch [17/101], Step [280/641], Loss: 0.31164, Avd Loss: 0.75097,  Disc Loss: 1.35349, Dur Loss: 0.47191, Norm Loss: 0.41626, F0 Loss: 2.20908
+Epoch [17/101], Step [300/641], Loss: 0.31490, Avd Loss: 0.73451,  Disc Loss: 1.31116, Dur Loss: 0.44887, Norm Loss: 0.37009, F0 Loss: 2.26106
+Epoch [17/101], Step [320/641], Loss: 0.31260, Avd Loss: 0.77344,  Disc Loss: 1.33740, Dur Loss: 0.46097, Norm Loss: 0.45240, F0 Loss: 2.25654
+Epoch [17/101], Step [340/641], Loss: 0.31127, Avd Loss: 0.67623,  Disc Loss: 1.32410, Dur Loss: 0.49759, Norm Loss: 0.40837, F0 Loss: 2.19071
+Epoch [17/101], Step [360/641], Loss: 0.31446, Avd Loss: 0.69971,  Disc Loss: 1.35367, Dur Loss: 0.50101, Norm Loss: 0.39202, F0 Loss: 2.04327
+Epoch [17/101], Step [380/641], Loss: 0.31852, Avd Loss: 0.70641,  Disc Loss: 1.32233, Dur Loss: 0.43869, Norm Loss: 0.36374, F0 Loss: 2.31953
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [17/101], Step [400/641], Loss: 0.31335, Avd Loss: 0.61736,  Disc Loss: 1.37193, Dur Loss: 0.48419, Norm Loss: 0.42192, F0 Loss: 2.33981
+Epoch [17/101], Step [420/641], Loss: 0.31335, Avd Loss: 0.73115,  Disc Loss: 1.30750, Dur Loss: 0.44596, Norm Loss: 0.44980, F0 Loss: 2.32396
+Epoch [17/101], Step [440/641], Loss: 0.31344, Avd Loss: 0.74651,  Disc Loss: 1.30149, Dur Loss: 0.49818, Norm Loss: 0.41444, F0 Loss: 2.41867
+Epoch [17/101], Step [460/641], Loss: 0.31404, Avd Loss: 0.68896,  Disc Loss: 1.32259, Dur Loss: 0.46257, Norm Loss: 0.43124, F0 Loss: 2.52129
+Epoch [17/101], Step [480/641], Loss: 0.31231, Avd Loss: 0.74659,  Disc Loss: 1.33127, Dur Loss: 0.48187, Norm Loss: 0.47016, F0 Loss: 2.42662
+Epoch [17/101], Step [500/641], Loss: 0.31165, Avd Loss: 0.75330,  Disc Loss: 1.36716, Dur Loss: 0.51029, Norm Loss: 0.39811, F0 Loss: 2.29157
+Epoch [17/101], Step [520/641], Loss: 0.32136, Avd Loss: 0.83197,  Disc Loss: 1.30944, Dur Loss: 0.51192, Norm Loss: 0.50516, F0 Loss: 2.30882
+Epoch [17/101], Step [540/641], Loss: 0.31533, Avd Loss: 0.81675,  Disc Loss: 1.35995, Dur Loss: 0.47433, Norm Loss: 0.42376, F0 Loss: 2.14283
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [17/101], Step [560/641], Loss: 0.31703, Avd Loss: 0.72796,  Disc Loss: 1.33178, Dur Loss: 0.55190, Norm Loss: 0.43790, F0 Loss: 2.34258
+Epoch [17/101], Step [580/641], Loss: 0.31209, Avd Loss: 0.76500,  Disc Loss: 1.34187, Dur Loss: 0.44351, Norm Loss: 0.47177, F0 Loss: 2.13897
+Epoch [17/101], Step [600/641], Loss: 0.31845, Avd Loss: 0.82218,  Disc Loss: 1.38223, Dur Loss: 0.42840, Norm Loss: 0.45702, F0 Loss: 2.25183
+Epoch [17/101], Step [620/641], Loss: 0.31348, Avd Loss: 0.69803,  Disc Loss: 1.31726, Dur Loss: 0.44922, Norm Loss: 0.36519, F0 Loss: 2.19903
+Epoch [17/101], Step [640/641], Loss: 0.31663, Avd Loss: 0.69395,  Disc Loss: 1.39648, Dur Loss: 0.46865, Norm Loss: 0.37051, F0 Loss: 2.27910
+Time elasped: 61.497817277908325
+Time elasped: 115.87745118141174
+Time elasped: 185.35176301002502
+Time elasped: 259.91909885406494
+Time elasped: 338.7439239025116
+Time elasped: 419.982474565506
+Time elasped: 513.168830871582
+Time elasped: 610.2418389320374
+Time elasped: 707.3643083572388
+Time elasped: 820.2555630207062
+Time elasped: 940.9485263824463
+Time elasped: 1044.2912690639496
+Time elasped: 1187.879651069641
+Time elasped: 1326.6397593021393
+Time elasped: 1456.3302643299103
+Time elasped: 1607.0869126319885
+Time elasped: 1768.3830988407135
+Time elasped: 1922.615713596344
+Time elasped: 2072.4494166374207
+Time elasped: 2210.5548734664917
+Time elasped: 2350.042657852173
+Time elasped: 2495.391641139984
+Time elasped: 2644.9651584625244
+Time elasped: 2794.648066997528
+Time elasped: 2953.3675696849823
+Time elasped: 3104.3269486427307
+Time elasped: 3263.6242990493774
+Time elasped: 3429.619966983795
+Time elasped: 3584.4714682102203
+Time elasped: 3740.300255060196
+Time elasped: 3893.7191920280457
+Time elasped: 4045.646039247513
+Validation loss: 0.334, 0.487
+Epochs: 17
+Saving..
+Epoch [18/101], Step [20/641], Loss: 0.32043, Avd Loss: 0.68553,  Disc Loss: 1.29544, Dur Loss: 0.49136, Norm Loss: 0.41411, F0 Loss: 2.61664
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [18/101], Step [40/641], Loss: 0.31548, Avd Loss: 0.66672,  Disc Loss: 1.38052, Dur Loss: 0.47569, Norm Loss: 0.42125, F0 Loss: 2.33468
+Epoch [18/101], Step [60/641], Loss: 0.30852, Avd Loss: 0.73245,  Disc Loss: 1.32415, Dur Loss: 0.47067, Norm Loss: 0.43886, F0 Loss: 2.40863
+Epoch [18/101], Step [80/641], Loss: 0.31581, Avd Loss: 0.73098,  Disc Loss: 1.32443, Dur Loss: 0.56350, Norm Loss: 0.41136, F0 Loss: 2.25450
+Epoch [18/101], Step [100/641], Loss: 0.31154, Avd Loss: 0.69274,  Disc Loss: 1.37162, Dur Loss: 0.43515, Norm Loss: 0.37238, F0 Loss: 2.11290
+Epoch [18/101], Step [120/641], Loss: 0.31141, Avd Loss: 0.73404,  Disc Loss: 1.30247, Dur Loss: 0.48271, Norm Loss: 0.45040, F0 Loss: 2.24886
+Epoch [18/101], Step [140/641], Loss: 0.30781, Avd Loss: 0.75262,  Disc Loss: 1.33525, Dur Loss: 0.44444, Norm Loss: 0.40915, F0 Loss: 2.20718
+Epoch [18/101], Step [160/641], Loss: 0.30689, Avd Loss: 0.74912,  Disc Loss: 1.33077, Dur Loss: 0.50184, Norm Loss: 0.47233, F0 Loss: 2.26833
+Epoch [18/101], Step [180/641], Loss: 0.31338, Avd Loss: 0.76677,  Disc Loss: 1.35837, Dur Loss: 0.43298, Norm Loss: 0.37362, F0 Loss: 2.20834
+Epoch [18/101], Step [200/641], Loss: 0.31029, Avd Loss: 0.73223,  Disc Loss: 1.35400, Dur Loss: 0.47864, Norm Loss: 0.38831, F0 Loss: 2.11168
+Epoch [18/101], Step [220/641], Loss: 0.30591, Avd Loss: 0.71978,  Disc Loss: 1.32192, Dur Loss: 0.51861, Norm Loss: 0.40677, F0 Loss: 2.25309
+Epoch [18/101], Step [240/641], Loss: 0.30354, Avd Loss: 0.78581,  Disc Loss: 1.33701, Dur Loss: 0.46547, Norm Loss: 0.42431, F0 Loss: 2.33016
+Epoch [18/101], Step [260/641], Loss: 0.30973, Avd Loss: 0.88420,  Disc Loss: 1.34625, Dur Loss: 0.48358, Norm Loss: 0.41326, F0 Loss: 2.54619
+Epoch [18/101], Step [280/641], Loss: 0.30933, Avd Loss: 0.71832,  Disc Loss: 1.32599, Dur Loss: 0.50218, Norm Loss: 0.45480, F0 Loss: 2.17713
+Epoch [18/101], Step [300/641], Loss: 0.31307, Avd Loss: 0.73405,  Disc Loss: 1.34474, Dur Loss: 0.44349, Norm Loss: 0.40889, F0 Loss: 2.39805
+Epoch [18/101], Step [320/641], Loss: 0.30906, Avd Loss: 0.71741,  Disc Loss: 1.32298, Dur Loss: 0.46917, Norm Loss: 0.43090, F0 Loss: 2.50828
+Epoch [18/101], Step [340/641], Loss: 0.31214, Avd Loss: 0.75183,  Disc Loss: 1.34605, Dur Loss: 0.45314, Norm Loss: 0.40705, F0 Loss: 2.05939
+Epoch [18/101], Step [360/641], Loss: 0.31023, Avd Loss: 0.79862,  Disc Loss: 1.31437, Dur Loss: 0.42729, Norm Loss: 0.40413, F0 Loss: 2.35940
+Epoch [18/101], Step [380/641], Loss: 0.30810, Avd Loss: 0.79893,  Disc Loss: 1.32696, Dur Loss: 0.49886, Norm Loss: 0.45112, F0 Loss: 2.12364
+Epoch [18/101], Step [400/641], Loss: 0.31399, Avd Loss: 0.81829,  Disc Loss: 1.30809, Dur Loss: 0.48358, Norm Loss: 0.41268, F0 Loss: 2.36388
+Epoch [18/101], Step [420/641], Loss: 0.30761, Avd Loss: 0.82551,  Disc Loss: 1.35109, Dur Loss: 0.44765, Norm Loss: 0.38324, F0 Loss: 2.14064
+Epoch [18/101], Step [440/641], Loss: 0.30844, Avd Loss: 0.70642,  Disc Loss: 1.36127, Dur Loss: 0.46617, Norm Loss: 0.39539, F0 Loss: 2.02219
+Epoch [18/101], Step [460/641], Loss: 0.31724, Avd Loss: 0.68473,  Disc Loss: 1.31531, Dur Loss: 0.43161, Norm Loss: 0.41449, F0 Loss: 2.44792
+Epoch [18/101], Step [480/641], Loss: 0.30985, Avd Loss: 0.79853,  Disc Loss: 1.27595, Dur Loss: 0.43847, Norm Loss: 0.38536, F0 Loss: 2.53480
+Epoch [18/101], Step [500/641], Loss: 0.31622, Avd Loss: 0.71235,  Disc Loss: 1.34325, Dur Loss: 0.46985, Norm Loss: 0.39442, F0 Loss: 2.06988
+Epoch [18/101], Step [520/641], Loss: 0.31404, Avd Loss: 0.73165,  Disc Loss: 1.35089, Dur Loss: 0.51494, Norm Loss: 0.43903, F0 Loss: 2.17955
+Epoch [18/101], Step [540/641], Loss: 0.31108, Avd Loss: 0.68709,  Disc Loss: 1.33481, Dur Loss: 0.43497, Norm Loss: 0.41599, F0 Loss: 2.38405
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [18/101], Step [560/641], Loss: 0.31244, Avd Loss: 0.73498,  Disc Loss: 1.31168, Dur Loss: 0.45977, Norm Loss: 0.39669, F0 Loss: 2.36308
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [18/101], Step [580/641], Loss: 0.30914, Avd Loss: 0.75639,  Disc Loss: 1.37722, Dur Loss: 0.49038, Norm Loss: 0.39595, F0 Loss: 2.24670
+Epoch [18/101], Step [600/641], Loss: 0.32026, Avd Loss: 0.77803,  Disc Loss: 1.29164, Dur Loss: 0.49380, Norm Loss: 0.47062, F0 Loss: 2.53161
+Epoch [18/101], Step [620/641], Loss: 0.30636, Avd Loss: 0.69180,  Disc Loss: 1.31897, Dur Loss: 0.44090, Norm Loss: 0.37184, F0 Loss: 2.06053
+Epoch [18/101], Step [640/641], Loss: 0.30353, Avd Loss: 0.72978,  Disc Loss: 1.37792, Dur Loss: 0.44388, Norm Loss: 0.34946, F0 Loss: 2.32926
+Time elasped: 163.0939965248108
+Time elasped: 333.2111780643463
+Time elasped: 492.0930950641632
+Time elasped: 652.4148607254028
+Time elasped: 813.3280844688416
+Time elasped: 973.456953048706
+Time elasped: 1138.8871037960052
+Time elasped: 1319.537763118744
+Time elasped: 1508.4513692855835
+Time elasped: 1711.9807052612305
+Time elasped: 1895.2139756679535
+Time elasped: 2056.182602405548
+Time elasped: 2214.496602535248
+Time elasped: 2361.174486875534
+Time elasped: 2520.0588076114655
+Time elasped: 2673.9061303138733
+Time elasped: 2872.831482887268
+Time elasped: 3062.3212537765503
+Time elasped: 3248.555463075638
+Time elasped: 3426.2116408348083
+Time elasped: 3601.9826114177704
+Time elasped: 3785.0203332901
+Time elasped: 3975.307493686676
+Time elasped: 4174.802873134613
+Time elasped: 4363.318416118622
+Time elasped: 4562.832071304321
+Time elasped: 4758.948702096939
+Time elasped: 4956.791985988617
+Time elasped: 5150.384962558746
+Time elasped: 5358.954580307007
+Time elasped: 5674.842657804489
+Time elasped: 5869.489689588547
+Validation loss: 0.331, 0.491
+Epochs: 18
+Saving..
+Epoch [19/101], Step [20/641], Loss: 0.30778, Avd Loss: 0.72408,  Disc Loss: 1.34029, Dur Loss: 0.43801, Norm Loss: 0.39268, F0 Loss: 2.02230
+Epoch [19/101], Step [40/641], Loss: 0.30506, Avd Loss: 0.76711,  Disc Loss: 1.37060, Dur Loss: 0.51190, Norm Loss: 0.43458, F0 Loss: 1.99995
+Epoch [19/101], Step [60/641], Loss: 0.31140, Avd Loss: 0.83184,  Disc Loss: 1.32558, Dur Loss: 0.47730, Norm Loss: 0.46230, F0 Loss: 2.19114
+Epoch [19/101], Step [80/641], Loss: 0.30305, Avd Loss: 0.78119,  Disc Loss: 1.37196, Dur Loss: 0.49399, Norm Loss: 0.45437, F0 Loss: 2.00863
+Epoch [19/101], Step [100/641], Loss: 0.30894, Avd Loss: 0.70447,  Disc Loss: 1.34513, Dur Loss: 0.48954, Norm Loss: 0.38819, F0 Loss: 2.15006
+Epoch [19/101], Step [120/641], Loss: 0.30798, Avd Loss: 0.77283,  Disc Loss: 1.36239, Dur Loss: 0.51395, Norm Loss: 0.46835, F0 Loss: 2.50875
+Epoch [19/101], Step [140/641], Loss: 0.31065, Avd Loss: 0.81455,  Disc Loss: 1.35387, Dur Loss: 0.49054, Norm Loss: 0.45942, F0 Loss: 2.42365
+Epoch [19/101], Step [160/641], Loss: 0.30988, Avd Loss: 0.76149,  Disc Loss: 1.34096, Dur Loss: 0.46804, Norm Loss: 0.41244, F0 Loss: 2.22884
+Epoch [19/101], Step [180/641], Loss: 0.30331, Avd Loss: 0.74009,  Disc Loss: 1.35962, Dur Loss: 0.42001, Norm Loss: 0.37019, F0 Loss: 1.97954
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [19/101], Step [200/641], Loss: 0.30835, Avd Loss: 0.72925,  Disc Loss: 1.36952, Dur Loss: 0.47801, Norm Loss: 0.38110, F0 Loss: 2.12678
+Epoch [19/101], Step [220/641], Loss: 0.30740, Avd Loss: 0.68263,  Disc Loss: 1.30747, Dur Loss: 0.47721, Norm Loss: 0.35801, F0 Loss: 2.53613
+Epoch [19/101], Step [240/641], Loss: 0.30711, Avd Loss: 0.67545,  Disc Loss: 1.34334, Dur Loss: 0.49003, Norm Loss: 0.38048, F0 Loss: 2.27593
+Epoch [19/101], Step [260/641], Loss: 0.30765, Avd Loss: 0.66351,  Disc Loss: 1.35299, Dur Loss: 0.42247, Norm Loss: 0.34778, F0 Loss: 2.13751
+Epoch [19/101], Step [280/641], Loss: 0.30950, Avd Loss: 0.72545,  Disc Loss: 1.31670, Dur Loss: 0.45632, Norm Loss: 0.37524, F0 Loss: 2.19586
+Epoch [19/101], Step [300/641], Loss: 0.30367, Avd Loss: 0.80475,  Disc Loss: 1.34460, Dur Loss: 0.46922, Norm Loss: 0.35435, F0 Loss: 2.09957
+Epoch [19/101], Step [320/641], Loss: 0.30555, Avd Loss: 0.72494,  Disc Loss: 1.30632, Dur Loss: 0.47317, Norm Loss: 0.35488, F0 Loss: 2.19763
+Epoch [19/101], Step [340/641], Loss: 0.30890, Avd Loss: 0.59686,  Disc Loss: 1.34647, Dur Loss: 0.50035, Norm Loss: 0.37576, F0 Loss: 2.08788
+Epoch [19/101], Step [360/641], Loss: 0.30803, Avd Loss: 0.73406,  Disc Loss: 1.35415, Dur Loss: 0.49054, Norm Loss: 0.47769, F0 Loss: 2.32177
+Epoch [19/101], Step [380/641], Loss: 0.31367, Avd Loss: 0.80705,  Disc Loss: 1.29867, Dur Loss: 0.46848, Norm Loss: 0.40274, F0 Loss: 2.24132
+Epoch [19/101], Step [400/641], Loss: 0.30239, Avd Loss: 0.69279,  Disc Loss: 1.38984, Dur Loss: 0.43261, Norm Loss: 0.39164, F0 Loss: 1.86985
+Epoch [19/101], Step [420/641], Loss: 0.30898, Avd Loss: 0.72383,  Disc Loss: 1.32257, Dur Loss: 0.49203, Norm Loss: 0.45124, F0 Loss: 2.34547
+Epoch [19/101], Step [440/641], Loss: 0.31474, Avd Loss: 0.71088,  Disc Loss: 1.31868, Dur Loss: 0.49466, Norm Loss: 0.44721, F0 Loss: 2.53558
+Epoch [19/101], Step [460/641], Loss: 0.30779, Avd Loss: 0.62603,  Disc Loss: 1.32634, Dur Loss: 0.43541, Norm Loss: 0.40010, F0 Loss: 2.41924
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [19/101], Step [480/641], Loss: 0.30815, Avd Loss: 0.65788,  Disc Loss: 1.37940, Dur Loss: 0.45521, Norm Loss: 0.35228, F0 Loss: 1.98335
+WARNING: JPCommonLabel_insert_pause() in jpcommon_label.c: First mora should not be short pause.
+Epoch [19/101], Step [500/641], Loss: 0.31002, Avd Loss: 0.68006,  Disc Loss: 1.36186, Dur Loss: 0.44391, Norm Loss: 0.41359, F0 Loss: 2.24579
+Epoch [19/101], Step [520/641], Loss: 0.31454, Avd Loss: 0.70520,  Disc Loss: 1.41106, Dur Loss: 0.51678, Norm Loss: 0.31759, F0 Loss: 2.12476
+Epoch [19/101], Step [540/641], Loss: 0.30767, Avd Loss: 0.87252,  Disc Loss: 1.32798, Dur Loss: 0.47667, Norm Loss: 0.40116, F0 Loss: 2.03217
+Epoch [19/101], Step [560/641], Loss: 0.31223, Avd Loss: 0.75101,  Disc Loss: 1.34169, Dur Loss: 0.42972, Norm Loss: 0.42252, F0 Loss: 2.14741
+Epoch [19/101], Step [580/641], Loss: 0.30612, Avd Loss: 0.74878,  Disc Loss: 1.35173, Dur Loss: 0.46796, Norm Loss: 0.43033, F0 Loss: 2.10893
+Epoch [19/101], Step [600/641], Loss: 0.30941, Avd Loss: 0.78210,  Disc Loss: 1.35019, Dur Loss: 0.50879, Norm Loss: 0.36260, F0 Loss: 2.40032
+Epoch [19/101], Step [620/641], Loss: 0.31101, Avd Loss: 0.74562,  Disc Loss: 1.30508, Dur Loss: 0.45935, Norm Loss: 0.41929, F0 Loss: 2.19293
+Epoch [19/101], Step [640/641], Loss: 0.31363, Avd Loss: 0.68269,  Disc Loss: 1.32923, Dur Loss: 0.50509, Norm Loss: 0.45002, F0 Loss: 2.14324
+Time elasped: 225.49434900283813
+Time elasped: 427.60234665870667
+Time elasped: 614.4277482032776
+Time elasped: 809.9008383750916
+Time elasped: 1019.0844540596008
+Time elasped: 1197.6250257492065
+Time elasped: 1402.2628960609436
+Time elasped: 1607.9797325134277
+Time elasped: 1800.5078058242798
+Time elasped: 1989.1038084030151
+Time elasped: 2183.7771623134613
+Time elasped: 2379.8322207927704
+Time elasped: 2575.6066842079163
+Time elasped: 2787.1126565933228
+Time elasped: 2991.05770611763
+Time elasped: 3178.4138429164886
+Time elasped: 3364.71337556839
+Time elasped: 3567.89857506752
+Time elasped: 3748.5277705192566
+Time elasped: 3933.1991884708405
+Time elasped: 4121.042209386826
+Time elasped: 4443.738301753998
+Time elasped: 4787.966621875763
+Time elasped: 5039.371813297272
+Time elasped: 5255.1415474414825
+Time elasped: 5454.153987646103
+Time elasped: 5647.0398988723755
+Time elasped: 5841.857224941254
+Time elasped: 6038.1431477069855
+Time elasped: 6228.184103012085
+Time elasped: 6423.728537321091
+Time elasped: 6615.405731201172
+Validation loss: 0.333, 0.487
+Epochs: 19
+Saving..
+Epoch [20/101], Step [20/641], Loss: 0.30485, Avd Loss: 0.74749,  Disc Loss: 1.35294, Dur Loss: 0.43679, Norm Loss: 0.40119, F0 Loss: 2.18876
+Epoch [20/101], Step [40/641], Loss: 0.30842, Avd Loss: 0.70390,  Disc Loss: 1.33958, Dur Loss: 0.45602, Norm Loss: 0.40767, F0 Loss: 2.24310
+Epoch [20/101], Step [60/641], Loss: 0.30759, Avd Loss: 0.76622,  Disc Loss: 1.31522, Dur Loss: 0.42868, Norm Loss: 0.34763, F0 Loss: 2.02331
+Epoch [20/101], Step [80/641], Loss: 0.30143, Avd Loss: 0.74003,  Disc Loss: 1.32452, Dur Loss: 0.47294, Norm Loss: 0.40765, F0 Loss: 2.23838
+Epoch [20/101], Step [100/641], Loss: 0.30432, Avd Loss: 0.69129,  Disc Loss: 1.32299, Dur Loss: 0.42761, Norm Loss: 0.35256, F0 Loss: 2.05863
+Epoch [20/101], Step [120/641], Loss: 0.30764, Avd Loss: 0.73933,  Disc Loss: 1.36565, Dur Loss: 0.45566, Norm Loss: 0.49305, F0 Loss: 2.51212
+Epoch [20/101], Step [140/641], Loss: 0.30508, Avd Loss: 0.71240,  Disc Loss: 1.32889, Dur Loss: 0.41188, Norm Loss: 0.37585, F0 Loss: 2.09839
+Epoch [20/101], Step [160/641], Loss: 0.29861, Avd Loss: 0.75941,  Disc Loss: 1.35121, Dur Loss: 0.47826, Norm Loss: 0.39825, F0 Loss: 2.12318
+Epoch [20/101], Step [180/641], Loss: 0.30758, Avd Loss: 0.79724,  Disc Loss: 1.37968, Dur Loss: 0.45917, Norm Loss: 0.40558, F0 Loss: 2.08569
+Epoch [20/101], Step [200/641], Loss: 0.29968, Avd Loss: 0.79834,  Disc Loss: 1.35861, Dur Loss: 0.47063, Norm Loss: 0.30585, F0 Loss: 2.06492
+
+Aborted!
+Time elasped: 195.00802731513977
+Time elasped: 403.6933286190033
+Time elasped: 605.1560714244843
+Time elasped: 801.7103984355927
+Time elasped: 993.3798761367798
+Time elasped: 1196.288182258606
+Time elasped: 1399.9329533576965
+Time elasped: 1647.6327714920044
+Time elasped: 1853.2849957942963
+Time elasped: 2055.938815355301

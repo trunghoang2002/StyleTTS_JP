@@ -21,12 +21,8 @@ cd StyleTTS_JP
 3. Install requirements:
 ```bash
 pip install -r requirements.txt
-# install monotonic_align
-cd monotonic_align
-pip install .
 # install pyopenjtalk
-cd ../pyopenjtalk
-pip install . --no-build-isolation
+pip install pyopenjtalk --no-build-isolation
 ```
 3. Download and preprocess JSUT dataset
 ```bash
