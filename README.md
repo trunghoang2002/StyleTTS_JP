@@ -8,30 +8,40 @@ Paper: [https://arxiv.org/abs/2107.10394](https://arxiv.org/abs/2205.15439)
 
 Audio samples: [https://styletts.github.io/](https://styletts.github.io/)
 
-## 前提条件
-1. Python >= 3.7
+## Pre-requisites
+1. Python >= 3.7 (Python 3.9 recommended)
+```bash
+conda create -n styletts python=3.9
+```
 2. Clone this repository:
 ```bash
 git clone https://github.com/seichi042I/StyleTTS_JP
 cd StyleTTS_JP
 ```
+3. Install requirements:
+```bash
+pip install -r requirements.txt
+# install monotonic_align
+cd monotonic_align
+pip install .
+# install pyopenjtalk
+cd ../pyopenjtalk
+pip install . --no-build-isolation
+```
+3. Download and preprocess JSUT dataset
+```bash
+chmod +x preprocess.sh
+./preprocess.sh
+```
 
-## 学習
+## Training
+Train both stage with:
 ```bash
 chmod +x run.sh
-chmod +x preprocess.sh
 ./run.sh
 ```
-個別に学習をするときは以下
-First stage training:
-```bash
-python train_first.py --config_path ./Configs/config.yml
-```
-Second stage training:
-```bash
-python train_second.py --config_path ./Configs/config.yml
-```
-
 
 ## Inference
-こちら[Hifi-GAN Link](https://drive.google.com/file/d/1h_h0GFdC6VOiZ-oFDClqy2bVonA1xDiw/view?usp=sharing)をダウンロードして`Vocoder`に解凍し、`Demo/inference_JSUT.ipynb`の各セルを実行してください。zero-shotの部分は対応していません。[元のリポジトリ](https://github.com/yl4579/StyleTTS)を参考に各自で動かしてみてください
+1. Download pretrained vocoder at [Hifi-GAN Link](https://) then unzip it to `Demo/Hifi-gan/Vocoder` folder.
+2. Download pretrained StyleTTS at [StyleTTS Link](https://) then unzip it to `Models` folder.
+3. Run each cell of `Demo/inference_JSUT.ipynb`.

@@ -1,14 +1,14 @@
 log_dir: "Models/JSUT"
-first_stage_path: "first_stage.pth"
-save_freq: 5
+first_stage_path: "first_stage.pth" # path to the last checkpoint of the 1st stage (it will be used as the initial model for the 2nd stage)
+save_freq: 1
 log_interval: 20
 device: "cuda"
 multigpu: false
 epochs_1st: 201 # number of epochs for first stage training
 epochs_2nd: 101 # number of peochs for second stage training
-batch_size: 64
-pretrained_model: ""
-second_stage_load_pretrained: false # set to true if the pre-trained model is for 2nd stage
+batch_size: 12
+pretrained_model: "Models/JSUT/epoch_2nd_00098.pth" # pre-trained model for the current stage
+second_stage_load_pretrained: true # set to true if the pre-trained model is for 2nd stage (if false, the pre-trained model path will be ignored)
 load_only_params: false # set to true if do not want to load epoch numbers and optimizer parameters
 
 train_data: "Data/train_list.txt"

@@ -130,6 +130,7 @@ def main(config_path):
             model[key] = MyDataParallel(model[key])
         
     if config.get('pretrained_model', '') != '' and config.get('second_stage_load_pretrained', False):
+        print('Loading the second stage model at %s ...' % config['pretrained_model'])
         model, optimizer, start_epoch, iters = load_checkpoint(model,  optimizer, config['pretrained_model'],
                                     load_only_params=config.get('load_only_params', True))
     else:
@@ -152,7 +153,7 @@ def main(config_path):
     TMA_epoch = loss_params.TMA_epoch
     TMA_CEloss = loss_params.TMA_CEloss
 
-    for epoch in range(epochs):
+    for epoch in range(start_epoch, epochs):
         running_loss = 0
         start_time = time.time()
         criterion = nn.L1Loss() 
@@ -347,7 +348,7 @@ def main(config_path):
 
             iters = iters + 1
             if (i+1)%log_interval == 0:
-                print ('Epoch [%d/%d], Step [%d/%d], Loss: %.5f, Avd Loss: %.5f,  Disc Loss: %.5f, Dur Loss: %.5f, Norm Loss: %.5f, F0 Loss: %.5f'
+                logger.info ('Epoch [%d/%d], Step [%d/%d], Loss: %.5f, Avd Loss: %.5f,  Disc Loss: %.5f, Dur Loss: %.5f, Norm Loss: %.5f, F0 Loss: %.5f'
                         %(epoch+1, epochs, i+1, len(train_list)//batch_size, running_loss / log_interval, loss_adv, d_loss, loss_dur, loss_norm_rec, loss_F0_rec))
                 
                 writer.add_scalar('train/mel_loss', running_loss / log_interval, iters)
@@ -456,7 +457,7 @@ def main(config_path):
                 iters_test += 1
 
         print('Epochs:', epoch + 1)
-        print('Validation loss: %.3f, %.3f' % (loss_test / iters_test, loss_align / iters_test), '\n\n\n')
+        logger.info('Validation loss: %.3f, %.3f' % (loss_test / iters_test, loss_align / iters_test))
 
         writer.add_scalar('eval/mel_loss', loss_test / iters_test, epoch + 1)
         writer.add_scalar('eval/dur_loss', loss_align / iters_test, epoch + 1)
