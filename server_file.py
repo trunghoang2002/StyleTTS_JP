@@ -40,12 +40,16 @@ def tts(request: TTSRequest):
         converted_samples = synthesize_speech(
             request.text, reference_embeddings, model, generator, textcleaner, device
         )
-        audios = []
+        audio_paths = []
         for key, audio in converted_samples.items():
-            audios.append(audio)
-        return {"audios": audios}
+            output_path = os.path.join(args.output_dir, f"output_{key}.wav")
+            write(output_path, 24000, audio)
+            audio_paths.append(output_path)
+        
+        return {"audio_paths": audio_paths}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="StyleTTS API")
