@@ -39,5 +39,5 @@ chmod +x run.sh
 
 ## Inference
 1. Download pretrained vocoder at [Hifi-GAN Link](https://drive.google.com/file/d/1ujkBWJfwaM2-Aks-ecOvGUbA0chJtZYX/view?usp=drive_link) then unzip it to `Demo/Hifi-gan/Vocoder` folder.
-2. Download pretrained StyleTTS at [StyleTTS Link](https://drive.google.com/file/d/13_0XgqyP5q0PRKHxyBxRSGkTmxneIa33/view?usp=drive_link) then unzip it to `Models` folder.
+2. Download pretrained StyleTTS at [StyleTTS Link](https://drive.google.com/file/d/1LMIjFk7xTnLDcDgwUMrbr5d2hwKtAmyP/view?usp=sharing) then unzip it to `Models` folder.
 3. Run each cell of `Demo/inference_JSUT.ipynb`.
