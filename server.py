@@ -24,6 +24,8 @@ model_config_path = "./Models/JSUT/config.yml"
 config = yaml.safe_load(open(model_config_path))
 print("Loaded config file...")
 
+speed = 0.9
+
 # Load models
 model_path = "./Models/JSUT/epoch_2nd_00100.pth"
 model = load_styletts(config, model_path, device)
@@ -38,11 +40,12 @@ class TTSRequest(BaseModel):
 def tts(request: TTSRequest):
     try:
         converted_samples = synthesize_speech(
-            request.text, reference_embeddings, model, generator, textcleaner, device
+            request.text, reference_embeddings, speed, model, generator, textcleaner, device
         )
         audios = []
         for key, audio in converted_samples.items():
-            audios.append(audio)
+            # Convert numpy array to list for JSON serialization
+            audios.append(audio.tolist())
         return {"audios": audios}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

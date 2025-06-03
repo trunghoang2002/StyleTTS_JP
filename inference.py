@@ -94,13 +94,14 @@ def load_styletts(config, model_path, device):
     _ = [model[key].to(device) for key in model]
     return model
 
-def synthesize_speech(text, reference_embeddings, model, generator, textcleaner, device):
+def synthesize_speech(text, reference_embeddings, speed, model, generator, textcleaner, device):
     """
     Generate speech from text using reference audio samples.
     
     Args:
         text (str): Input text to be synthesized.
         reference_embeddings : Dictionary of reference audio samples and their embeddings.
+        speed (float): Speed factor for the synthesized speech.
         model: Pretrained TTS model.
         generator: Vocoder model to convert features to waveform.
         textcleaner: Class to clean and tokenize input text.
@@ -130,7 +131,8 @@ def synthesize_speech(text, reference_embeddings, model, generator, textcleaner,
             d = model.predictor.text_encoder(t_en, style, input_lengths, m)
             x, _ = model.predictor.lstm(d)
             duration = model.predictor.duration_proj(x)
-            pred_dur = torch.round(duration.squeeze()).clamp(min=1)
+            # pred_dur = torch.round(duration.squeeze()).clamp(min=1)
+            pred_dur = torch.round(duration.squeeze() / speed).clamp(min=1)
             
             pred_aln_trg = torch.zeros(input_lengths, int(pred_dur.sum().data)).to(device)
             c_frame = 0
