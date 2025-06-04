@@ -55,7 +55,7 @@ if __name__ == "__main__":
     parser.add_argument("--host", default="0.0.0.0", help="Server host (default: 0.0.0.0)")
     parser.add_argument("--port", type=int, default=7000, help="Server port (default: 7000)")
     parser.add_argument("--output_dir", default="../DINet", help="Output directory for audio files (default: ../DINet)")
-    parser.add_argument("--reference_audio", default="jsut_24kHz/onomatopee300/wav/ONOMATOPEE300_001.wav", help="Path to the reference audio")
+    parser.add_argument("--reference_audio", default="ref_audio.wav", help="Path to the reference audio")
     args = parser.parse_args()
 
     # Compute style embeddings from reference samples
