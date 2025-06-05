@@ -55,7 +55,7 @@ def scan_checkpoint(cp_dir, prefix):
     return sorted(cp_list)[-1]
 
 def load_hifigan(device):
-    cp_g = scan_checkpoint("Demo/hifi-gan/Vocoder/", 'g_')
+    cp_g = scan_checkpoint("Demo/hifi-gan/Vocoder/LibriTTS/", 'g_')
 
     config_file = os.path.join(os.path.split(cp_g)[0], 'config.json')
     with open(config_file) as f:
