@@ -4,7 +4,7 @@ import torch
 import yaml
 import argparse
 from scipy.io.wavfile import write
-
+import numpy as np
 import os
 from dotenv import load_dotenv
 
@@ -24,6 +24,8 @@ model_config_path = "./Models/JSUT/config.yml"
 config = yaml.safe_load(open(model_config_path))
 print("Loaded config file...")
 
+speed = 0.9
+
 # Load models
 model_path = "./Models/JSUT/epoch_2nd_00100.pth"
 model = load_styletts(config, model_path, device)
@@ -38,12 +40,12 @@ class TTSRequest(BaseModel):
 def tts(request: TTSRequest):
     try:
         converted_samples = synthesize_speech(
-            request.text, reference_embeddings, model, generator, textcleaner, device
+            request.text, reference_embeddings, speed, model, generator, textcleaner, device
         )
         audio_paths = []
         for key, audio in converted_samples.items():
             output_path = os.path.join(args.output_dir, f"output_{key}.wav")
-            write(output_path, 24000, audio)
+            write(output_path, 24000, audio.astype(np.int16))
             audio_paths.append(output_path)
         
         return {"audio_paths": audio_paths}
@@ -55,10 +57,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="StyleTTS API")
     parser.add_argument("--host", default="0.0.0.0", help="Server host (default: 0.0.0.0)")
     parser.add_argument("--port", type=int, default=7000, help="Server port (default: 7000)")
-    parser.add_argument("--output_dir", default="../DINet", help="Output directory for audio files (default: ../DINet)")
-    parser.add_argument("--reference_audio", default="jsut_24kHz/onomatopee300/wav/ONOMATOPEE300_001.wav", help="Path to the reference audio")
+    parser.add_argument("--output_dir", default="Output", help="Output directory for audio files (default: Output)")
+    parser.add_argument("--reference_audio", default="ref_audio.wav", help="Path to the reference audio")
     args = parser.parse_args()
 
+    os.makedirs(args.output_dir, exist_ok=True)
     # Compute style embeddings from reference samples
     reference_samples = [
         args.reference_audio,
